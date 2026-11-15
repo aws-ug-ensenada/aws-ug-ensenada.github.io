@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AWS User Group Ensenada</title>
+  <meta name="description" content="Comunidad de AWS en Ensenada, Baja California. Síguenos para noticias y fechas de eventos.">
+  <meta property="og:title" content="AWS User Group Ensenada">
+  <meta property="og:description" content="Conecta con nosotros: noticias y fechas de eventos.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aws-ug-ensenada.github.io/">
+  <meta property="og:image" content="https://aws-ug-ensenada.github.io/logo.png">
+  <meta name="theme-color" content="#161E2D">
+  <link rel="icon" href="logo.png">
+  <style>
+    :root {
+      --primary: #161E2D;
+      --accent: #A166FF;
+      --bg: #F6F6F7;
+      --card: #FFFFFF;
+      --text: #161E2D;
+      --muted: #5B6270;
+      --line: #E3E4E8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0F141E;
+        --card: #161E2D;
+        --text: #F2F3F5;
+        --muted: #A9B0BC;
+        --line: #26304A;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    main { width: 100%; max-width: 480px; }
+    header {
+      background: var(--primary);
+      color: #FFFFFF;
+      padding: 32px 24px 28px;
+      text-align: center;
+    }
+    header img {
+      width: 180px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.75rem; font-weight: 600; }
+    header p { margin: 0; color: #C9CEDA; }
+    ul { list-style: none; margin: 0; padding: 8px 16px 24px; }
+    li + li { margin-top: 12px; }
+    a.link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 16px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: border-color .15s, transform .15s;
+    }
+    a.link:hover, a.link:focus-visible { border-color: var(--accent); transform: translateY(-1px); outline: none; }
+    .badge {
+      flex: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: .95rem;
+    }
+    .linkedin { background: #0A66C2; }
+    .instagram { background: #E1306C; }
+    .github { background: #181717; }
+    .meetup { background: #ED1C40; }
+    .label small { display: block; color: var(--muted); font-size: .85rem; }
+    footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 0 16px 32px; }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <img src="logo.png" alt="Logo del AWS User Group Ensenada: cola de ballena sobre olas">
+      <h1>Conecta con nosotros</h1>
+      <p>Síguenos para noticias y fechas de eventos</p>
+    </header>
+    <ul>
+      <li>
+        <a class="link" href="https://www.meetup.com/aws-user-group-ensenada/" rel="noopener">
+          <span class="badge meetup" aria-hidden="true">M</span>
+          <span class="label">Meetup<small>Próximos eventos y registro</small></span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://www.linkedin.com/company/aws-user-group-ensenada/" rel="noopener">
+          <span class="badge linkedin" aria-hidden="true">in</span>
+          <span class="label">LinkedIn<small>Noticias de la comunidad</small></span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://www.instagram.com/awscommunityens/" rel="noopener">
+          <span class="badge instagram" aria-hidden="true">IG</span>
+          <span class="label">Instagram<small>@awscommunityens</small></span>
+        </a>
+      </li>
+      <li>
+        <a class="link" href="https://github.com/aws-ug-ensenada" rel="noopener">
+          <span class="badge github" aria-hidden="true">GH</span>
+          <span class="label">GitHub<small>Demos y material de las sesiones</small></span>
+        </a>
+      </li>
+    </ul>
+    <footer>AWS User Group Ensenada · Baja California, México</footer>
+  </main>
+</body>
+</html>
