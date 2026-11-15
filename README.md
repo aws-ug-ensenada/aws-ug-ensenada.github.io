@@ -7,7 +7,7 @@ It replaces the dynamic QR page on QR Code Generator Pro (`qrco.de/berbf6`). The
 ## Files
 
 - `index.html`: the page (Spanish, no trackers, no external scripts).
-- `logo.png`: the group logo (hexagon, whale tail over waves). Add the official file before publishing.
+- `logo.png`: the group logo (hexagon, whale tail over waves), full size with a transparent background; `logo-512.png` for the page and link previews; `icon-192.png` for the browser tab and phone home screen.
 - `qr/`: static QR codes for the page, made with `uv run --with segno python qr/make_qr.py`.
   - `link-page-compact.svg` / `.png`: encodes `HTTPS://AWS-UG-ENSENADA.GITHUB.IO` in uppercase (valid, and a smaller 29×29 grid that is easier to 3D-print). **Use this one for keychains.**
   - `link-page.svg` / `.png`: the same URL in lowercase (33×33), for print or screens.
